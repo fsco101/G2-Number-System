@@ -18,9 +18,9 @@ function getPagesBase(): string {
   return `/${repoName}/`
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   // Only set GitHub Pages base during build; keep dev server at '/'
-  base: process.env.NODE_ENV === 'production' ? getPagesBase() : '/',
+  base: command === 'build' ? getPagesBase() : '/',
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
@@ -41,4 +41,4 @@ export default defineConfig({
     // Ensure assets use relative paths
     assetsDir: 'assets',
   },
-})
+}))
