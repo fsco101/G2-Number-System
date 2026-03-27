@@ -17,9 +17,18 @@ export function IntroductionSection() {
       </div>
 
       <div className="mb-6">
+        <div className="w-full aspect-video bg-black rounded-lg overflow-hidden mb-3">
+          <iframe
+            src="https://www.youtube.com/embed/x33geTAn63c"
+            title="Introduction to Number Systems"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-full h-full"
+          />
+        </div>
         <a href="https://youtu.be/x33geTAn63c" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cyan-400 hover:underline">
           <ArrowRight className="w-4 h-4" />
-          <span className="font-mono">Watch: Number Systems</span>
+          <span className="font-mono">Watch on YouTube</span>
         </a>
       </div>
 
