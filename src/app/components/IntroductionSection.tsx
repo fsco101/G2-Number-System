@@ -16,6 +16,13 @@ export function IntroductionSection() {
         <h3 className="text-2xl text-slate-100 mb-4">Number Systems: Fundamentals, Basics, Operations & Conversions</h3>
       </div>
 
+      <div className="mb-6">
+        <a href="https://youtu.be/x33geTAn63c" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cyan-400 hover:underline">
+          <ArrowRight className="w-4 h-4" />
+          <span className="font-mono">Watch: Number Systems</span>
+        </a>
+      </div>
+
       {/* Introduction */}
       <div className="bg-slate-900/50 rounded-xl p-6 sm:p-8 border border-slate-800 mb-8">
         <h4 className="text-xl font-mono text-cyan-400 mb-4 flex items-center gap-2">
